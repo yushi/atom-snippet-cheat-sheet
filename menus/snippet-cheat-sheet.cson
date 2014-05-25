@@ -1,0 +1,16 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  '.overlayer':
+      'Enable snippet-cheat-sheet': 'snippet-cheat-sheet:toggle'
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'snippet-cheat-sheet'
+      'submenu': [
+        { 'label': 'Toggle', 'command': 'snippet-cheat-sheet:toggle' }
+      ]
+    ]
+  }
+]
